@@ -13,7 +13,7 @@ export class RickyService {
   private http = inject(HttpClient);
 
   getProducts(): Observable<RickyResponse> {
-    return this.http.get<RickyResponse>(`https://api.escuelajs.co/api/v1/products`);
+    return this.http.get<RickyResponse>(`https://rickandmortyapi.com/api/character`);
   }
 
   getProductsRs() {
@@ -29,7 +29,7 @@ export class RickyService {
 
   getProduct(id: string): Observable<RickyResponse> {
     return this.http.get<RickyResponse>(
-      `https://api.escuelajs.co/api/v1/products/${id}`
+      `https://rickandmortyapi.com/api/character/${id}`
     );
   }
 
