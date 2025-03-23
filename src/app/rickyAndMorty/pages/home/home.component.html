@@ -1,0 +1,11 @@
+<p>home works!</p>
+<ul>
+    @for(personaje of personajes.value()?.results; track personaje.id) {
+        <li>
+            <a routerLink="/details/{{ personaje.id}}">
+                {{ personaje.name }}
+            </a>
+            {{personaje.name}}
+        </li>
+    }
+</ul>

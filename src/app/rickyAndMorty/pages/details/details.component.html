@@ -1,0 +1,9 @@
+<p>details works!</p>
+<a (click)="goBack()">Back</a>
+    <h1>Detail</h1>
+    <p>loading: {{ personajeRs.isLoading() }}</p>
+    @if(!personajeRs.isLoading() && personajeRs.hasValue()) {
+        @let personaje = personajeRs.value();
+        <h4>{{ personaje.name}}</h4>
+        <p>{{ personaje.species }}</p>
+    }
